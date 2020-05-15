@@ -1,0 +1,598 @@
+:root {
+    --color: #E50914;
+    --fondo: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--fondo);
+}
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+.fuetflix {
+    width: 180px;
+    margin-left: 20px;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a {
+    color: #AAAA;
+    font-size: 18px;
+    font-family: "Open Sans";
+    text-decoration: none;
+    margin-right: 20px;
+}
+header nav button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+header nav a:hover,
+header nav a.activo {
+    color: white; 
+}
+/*------------Serie Principal------------*/
+
+.serie-principal {
+    font-size: 16.5px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient( rgb(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url("img/PosterMarina.png");
+    background-position: center center;
+}
+.serie-principal .contenedor {
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.serie-principal .contenedor img {
+    width: 600px;
+}
+.descripcion {
+    font-size: 1.2em;
+    font-family: "Open Sans", serif;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 0.2em;
+}
+
+.serie-principal .boton{
+    background: rgba(0,0,0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+.serie-principal .boton i {
+    margin-right:1.25em;
+}
+.serie-principal .boton:hover {
+    background: #fff;
+    color: black;
+}
+/* -------------------Más Información---------------------*/
+.mas-informacion {
+    font-size: 16.5px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient( rgb(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url("img/PosterMarina2.png");
+    background-position: center center;
+}
+
+.mas-informacion .contenedor {
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+.mas-informacion .contenedor img {
+    width: 450px;
+}
+.mas-informacion .contenedor .caracteristicas li{
+    list-style: none;
+    display: inline-block;
+    font: bold;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+.novedad {
+    color: rgb(27, 199, 27);
+}
+.mas-informacion .descripcion {
+    font-size: 1em;
+    font-family: "Open Sans", serif;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 0.55em;
+}
+.mas-informacion .boton{
+    background: white;
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color:black;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+.mas-informacion .boton i {
+    margin-right:1.25em;
+}
+.mas-informacion .boton:hover {
+    background: grey;
+    color: black;
+}
+.mas-informacion .boton2{
+    background: grey;
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color:white;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+.mas-informacion .boton2 i {
+    margin-right:1.25em;
+}
+.mas-informacion .boton2:hover {
+    background: #3d3d3d;
+}
+.mas-informacion article{
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: "Open Sans";
+    line-height: 1.75em;
+    max-width: 50%;
+}
+article a {
+    color: grey;
+    text-decoration: none;
+}
+article a:hover {
+    text-decoration: underline;
+}
+.mas-informacion .navegacion {
+    margin-top: 60px;
+    text-align: center;
+}
+.mas-informacion .navegacion li {
+    display: inline-block;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 22px;
+    padding: 20px;
+}
+.mas-informacion .navegacion a{
+    text-decoration: none;
+    color:grey;
+}
+.mas-informacion .navegacion a:hover{
+    color: white;
+}
+.mas-informacion .navegacion .activo{
+    color: white;
+    border-bottom: 6px solid #E50914;
+}
+/* ----------Episodios------------*/
+.episodios {
+    font-size: 16.5px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient( rgb(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url("img/PosterMarina2.png");
+    background-position: center center;
+}
+
+.episodios .contenedor {
+    margin: 0 auto;
+    margin-bottom: 6,25em;
+}
+.episodios .contenedor img {
+    width: 360px;
+}
+.episodios .contenedor .boton {
+    background: rgba(0,0,0, 0.5);
+    padding-top: 4px;
+    padding-bottom:4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+    margin-left: auto;
+}
+.episodios .contenedor .boton i{
+    margin-left: 20px;
+}
+.episodios .contenedor .boton:hover{
+    background: rgb(66, 66, 66);
+}
+.episodios .navegacion {
+    text-align: center;
+}
+.episodios .navegacion li {
+    display: inline-block;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 22px;
+    padding: 20px;
+}
+.episodios .navegacion a{
+    text-decoration: none;
+    color:grey;
+}
+.episodios .navegacion a:hover{
+    color: white;
+}
+.episodios .navegacion .activo{
+    color: white;
+    border-bottom: 6px solid #E50914;
+}
+
+
+/* Contenedor Título Controles-------*/
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+    align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: "Open Sans";
+    
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
+
+
+/*-------------Contenedor Principal y Flechas--------------*/
+
+.peliculas-recomendadas {
+	margin-bottom: 70px;
+}
+
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+/*-------------Contenedor Principal y Flechas 2--------------*/
+
+.episodios-contenedor .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.episodios-contenedor .contenedor-principal .flecha-izquierda,
+.episodios-contenedor .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.2);
+	font-size: 40px;
+	height: 14%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.episodios-contenedor .contenedor-principal .flecha-izquierda:hover,
+.episodios-contenedor .contenedor-principal .flecha-derecha:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.episodios-contenedor .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.episodios-contenedor .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel 2----- ----- ----- */
+.episodios-contenedor .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.episodios-contenedor .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.episodios-contenedor .contenedor-carousel .carousel div {
+	min-width: 20%;
+    transition: .3s ease all;
+    margin-right: 200px;
+}
+
+/*-------------Detalles---------------*/
+.detalles {
+    font-size: 16.5px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient( rgb(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url("img/PosterMarina2.png");
+    background-position: center center;
+}
+
+.detalles .contenedor img {
+    width: 340px;
+}
+.detalles .navegacion {
+    text-align: center;
+    margin-top: 20px;
+}
+.detalles .navegacion li {
+    display: inline-block;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 22px;
+    padding: 20px;
+}
+.detalles .navegacion a{
+    text-decoration: none;
+    color:grey;
+}
+.detalles .navegacion a:hover{
+    color: white;
+}
+.detalles .navegacion .activo{
+    color: white;
+    border-bottom: 6px solid #E50914;
+}
+.detalles .datos {
+    font-size:16px;
+    font-family: "Open Sans";
+    display: flex;
+}
+.detalles .datos article p{
+    margin-bottom: 10px;
+}
+.detalles .datos article{
+    color: gray;
+    cursor: pointer;
+    margin-right: 200px;
+}
+.detalles .datos article a{
+    margin-top: 10px;
+    color:white;
+}
+
+
+/*-------------Media Queries------------*/
+
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel {
+		overflow: visible;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.peliculas-recomendadas .indicadores,
+	.peliculas-recomendadas .flecha-izquierda,
+	.peliculas-recomendadas .flecha-derecha {
+		display: none;
+	}
+}
+/*----------------Trailer----------------*/
+.trailer {
+    font-size: 16.5px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient( rgb(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url("img/PosterMarina2.png");
+    background-position: center center;
+}
+
+.trailer .contenedor {
+    margin: 0 auto;
+    margin-bottom: 6,25em;
+}
+.trailer .contenedor img {
+    width: 300px;
+}
+.trailer .contenedor .video {
+    width: 640px;
+    height: 340px;
+    display: block;
+    margin: auto;
+}
+.trailer .contenedor article{
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: "Open Sans";
+    line-height: 1.75em;
+    max-width: 50%;
+}
+.trailer .navegacion {
+    margin-top: 80px;
+    text-align: center;
+}
+.trailer .navegacion li {
+    display: inline-block;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 22px;
+    padding: 20px;
+}
+.trailer .navegacion a{
+    text-decoration: none;
+    color:grey;
+}
+.trailer .navegacion a:hover{
+    color: white;
+}
+.trailer .navegacion .activo{
+    color: white;
+    border-bottom: 6px solid #E50914;
+}
+/*---------------Similares-------------*/
+.similares {
+    font-size: 16.5px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient( rgb(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url("img/PosterMarina2.png");
+    background-position: center center;
+}
+
+.similares .contenedor {
+    margin: 0 auto;
+    margin-bottom: 6,25em;
+}
+.similares .contenedor img {
+    width: 360px;
+}
+.similares .contenedor article{
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: "Open Sans";
+    line-height: 1.75em;
+    max-width: 50%;
+}
+.similares .navegacion {
+    margin-top: 20px;
+    text-align: center;
+}
+.similares .navegacion li {
+    display: inline-block;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 22px;
+    padding: 20px;
+}
+.similares .navegacion a{
+    text-decoration: none;
+    color:grey;
+}
+.similares .navegacion a:hover{
+    color: white;
+}
+.similares .navegacion .activo{
+    color: white;
+    border-bottom: 6px solid #E50914;
+}
